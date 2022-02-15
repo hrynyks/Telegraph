@@ -1,0 +1,49 @@
+.keep {
+    padding-bottom: 216px;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    &__image {
+        position: relative;
+        @include a (tablet-xl) {
+            order: 2;
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        top: 245px;
+        left: 100px;
+
+        @include a (tablet) {
+            display: none;
+        }
+    }
+
+    &__content {
+        max-width: 466px;
+        width: 100%;
+    }
+
+    &__title {
+        @include a (tablet-xl) {
+            text-align: center;
+        }
+    }
+
+    &__descr {
+        @include a (tablet-xl) {
+            text-align: center;
+        }
+    }
+}
